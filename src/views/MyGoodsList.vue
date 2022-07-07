@@ -42,8 +42,15 @@
           </span>
         </td>
         <td>
-          <button class="btn btn-danger btn-sm" @click="del(scope.row.id)">
+          <button
+            class="btn btn-danger btn-sm"
+            @click="del(scope.row.id)"
+            v-isShow="0"
+          >
             删除
+          </button>
+          <button class="btn btn-danger btn-sm" @click="del(scope.row.id)">
+            编辑
           </button>
         </td>
       </template>
